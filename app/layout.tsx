@@ -1,6 +1,11 @@
 import "./globals.css";
 import Link from "next/link";
 
+export const metadata = {
+  title: "VOID_CREW",
+  description: "Official website of Team VOID_CREW",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -9,25 +14,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* HEADER */}
-        <header className="header">
-          <h1 className="logo">My Website Header</h1>
+        {/* NAVBAR */}
+        <nav className="navbar">
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/team">Team</Link>
+        </nav>
 
-          <nav className="nav">
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-          </nav>
-        </header>
-
-        {/* MAIN CONTENT */}
-        <main className="main">
-          {children}
-        </main>
-
-        {/* FOOTER */}
-        <footer className="footer">
-          © 2026 My Website
-        </footer>
+        {/* PAGE CONTENT */}
+        {children}
       </body>
     </html>
   );
