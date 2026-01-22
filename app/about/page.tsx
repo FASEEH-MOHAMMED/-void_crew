@@ -1,15 +1,32 @@
 export default function About() {
   return (
     <div className="about">
-      <h2>About Team $VOID_CREW</h2>
-      <p>
-        Team VOID_CREW is a group of passionate software engineers focused on
-        building clean, scalable and user-friendly applications.
+      <h2>Faseeh Mohammed</h2>
+      <p className="role">
+        Founder • Full Stack Developer • AI Enthusiast
       </p>
 
-      <div className="team-images">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" />
-        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" />
+      <p className="description">
+        I am a passionate software developer focused on building modern,
+        scalable, and user-friendly web applications. I enjoy working with
+        cutting-edge technologies and turning innovative ideas into real-world
+        solutions.
+      </p>
+
+      <div className="portfolio-links">
+        <a
+          href="https://www.linkedin.com/in/faseeh-mohammed-a-072247324/"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/FASEEH-MOHAMMED"
+          target="_blank"
+        >
+          GitHub
+        </a>
       </div>
     </div>
   );

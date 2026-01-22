@@ -21,17 +21,19 @@ export default function Home() {
     const timer = setTimeout(() => {
       if (!isDeleting) {
         setCharIndex((prev) => prev + 1);
+
         if (charIndex === currentText.length) {
-          setTimeout(() => setIsDeleting(true), 1000);
+          setTimeout(() => setIsDeleting(true), 500);
         }
       } else {
         setCharIndex((prev) => prev - 1);
+
         if (charIndex === 0) {
           setIsDeleting(false);
           setTextIndex((prev) => (prev + 1) % texts.length);
         }
       }
-    }, isDeleting ? 50 : 100);
+    }, isDeleting ? 30 : 50);
 
     return () => clearTimeout(timer);
   }, [charIndex, isDeleting, textIndex]);
@@ -40,7 +42,6 @@ export default function Home() {
     <main className="hero">
       <h1>$VOID_CREW</h1>
 
-      {/* 🔥 Dynamic second line */}
       <p>
         We are a futuristic team{" "}
         <span className="typing">

@@ -80,7 +80,7 @@ html, body {
 }
 
 /* =========================
-   ABOUT PAGE
+   ABOUT / PORTFOLIO PAGE
    ========================= */
 .about {
   min-height: calc(100vh - 60px);
@@ -104,6 +104,38 @@ html, body {
   opacity: 0.85;
 }
 
+/* Portfolio-specific text */
+.role {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #9aa4b2;
+}
+
+.description {
+  max-width: 650px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.portfolio-links {
+  display: flex;
+  gap: 25px;
+}
+
+.portfolio-links a {
+  color: #00c6ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.portfolio-links a:hover {
+  text-decoration: underline;
+}
+
+/* Old about page images (still safe if unused) */
 .team-images {
   margin-top: 40px;
   display: flex;
@@ -173,6 +205,28 @@ html, body {
 }
 
 .team-card a:hover {
+  text-decoration: underline;
+}
+
+/* Owner link on Team page */
+.owner-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.owner-section p {
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.owner-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #00c6ff;
+  text-decoration: none;
+}
+
+.owner-link:hover {
   text-decoration: underline;
 }
 

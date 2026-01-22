@@ -55,6 +55,14 @@ export default function Team() {
           <p>Member 4</p>
         </div>
       </div>
+
+      {/* 👤 Owner portfolio link */}
+      <div className="owner-section">
+        <p>Want to know more?</p>
+        <Link href="/about" className="owner-link">
+          Owner
+        </Link>
+      </div>
     </div>
   );
 }
